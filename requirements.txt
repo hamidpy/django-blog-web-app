@@ -1,0 +1,13 @@
+asgiref==3.5.2
+dj-database-url==1.0.0
+Django==4.0.6
+django-ckeditor==6.4.2
+django-heroku==0.3.1
+django-js-asset==2.0.0
+gunicorn==20.1.0
+Pillow==9.2.0
+psycopg2==2.9.4
+python-decouple==3.6
+sqlparse==0.4.2
+tzdata==2022.1
+whitenoise==6.2.0
