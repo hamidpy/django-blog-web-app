@@ -3,7 +3,8 @@ import django_heroku
 import dj_database_url
 from pathlib import Path
 import cloudinary
-import cloudinary_storage
+import cloudinary.uploader
+import cloudinary.api
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -121,15 +122,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
-from decouple import config
-
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': config('cloud_name', default=""),
-    'API_KEY': config('api_key', default=""),
-    'API_SECRET': config('api_secret', default=""),
-}
-
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 
@@ -145,6 +137,12 @@ django_heroku.settings(locals())
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+
+cloudinary.config(
+  cloud_name = "dlngjubtq",
+  api_key = "718234929957781",
+  api_secret = "zPKMk54sr53OQmQxJ_O9x5FY_k4",
+)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

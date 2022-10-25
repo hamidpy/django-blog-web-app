@@ -3,6 +3,7 @@ from django.utils.text import slugify
 from django.db.models.signals import pre_save
 
 from ckeditor.fields import RichTextField
+from cloudinary.models import CloudinaryField
 
 
 # Create your models here.
@@ -26,7 +27,7 @@ class Post(models.Model):
         ('Inspiration', 'Inspiration'),
         ('Latest Posts', 'Latest Posts'),
     )
-    fetured_image = models.ImageField(upload_to='Images')
+    fetured_image = CloudinaryField('image')
     title = models.CharField(max_length=200)
     author = models.CharField(max_length=50)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
