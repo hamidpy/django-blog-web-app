@@ -24,7 +24,7 @@
 						</div>
 						<a href="{% url 'blog_single' %}">
 							<div class="thumb rounded">
-								<div class="inner data-bg-image" data-bg-image="{{i.fetured_image}}"></div>
+								<div class="inner data-bg-image" data-bg-image="{{i.fetured_image.url}}"></div>
 							</div>
 						</a>
 					</div>
@@ -52,7 +52,7 @@
 									<div class="thumb circle">
 										<a href="{% url 'blog_single' %}">
 											<div class="inner">
-												<img src="{{i.fetured_image}}" alt="post-title" />
+												<img src="{{i.fetured_image.url}}" alt="post-title" />
 											</div>
 										</a>
 									</div>
@@ -73,7 +73,7 @@
 									<div class="thumb circle">
 										<a href="{% url 'blog_single' %}">
 											<div class="inner">
-												<img src="{{i.fetured_image}}" alt="post-title" />
+												<img src="{{i.fetured_image.url}}" alt="post-title" />
 											</div>
 										</a>
 									</div>
@@ -124,7 +124,7 @@
 											</span>
 											<a href="{% url 'blog_single' %}">
 												<div class="inner">
-													<img src="{{i.fetured_image}}" alt="post-title" />
+													<img src="{{i.fetured_image.url}}" alt="post-title" />
 												</div>
 											</a>
 										</div>
@@ -145,7 +145,7 @@
 									<div class="thumb rounded">
 										<a href="{% url 'blog_single' %}">
 											<div class="inner">
-												<img src="{{i.fetured_image}}" alt="post-title" />
+												<img src="{{i.fetured_image.url}}" alt="post-title" />
 											</div>
 										</a>
 									</div>
@@ -193,7 +193,7 @@
 										</span>
 										<a href="{% url 'blog_single' %}">
 											<div class="inner">
-												<img src="{{ i.fetured_image}}" alt="post-title" />
+												<img src="{{ i.fetured_image.url}}" alt="post-title" />
 											</div>
 										</a>
 									</div>
@@ -214,7 +214,7 @@
 									<div class="thumb rounded">
 										<a href="{% url 'blog_single' %}">
 											<div class="inner">
-												<img src="{{i.fetured_image}}" alt="post-title" />
+												<img src="{{i.fetured_image.url}}" alt="post-title" />
 											</div>
 										</a>
 									</div>
@@ -239,7 +239,7 @@
 										</span>
 										<a href="{% url 'blog_single' %}">
 											<div class="inner">
-												<img src="{{ i.fetured_image}}" alt="post-title" />
+												<img src="{{ i.fetured_image.url}}" alt="post-title" />
 											</div>
 										</a>
 									</div>
@@ -260,7 +260,7 @@
 									<div class="thumb rounded">
 										<a href="{% url 'blog_single' %}">
 											<div class="inner">
-												<img src="{{i.fetured_image}}" alt="post-title" />
+												<img src="{{i.fetured_image.url}}" alt="post-title" />
 											</div>
 										</a>
 									</div>
@@ -303,7 +303,7 @@
 							<a href="{% url 'blog_single' %}">
 								<div class="thumb rounded">
 									<div class="inner">
-										<img src="{{i.fetured_image}}" alt="thumb" />
+										<img src="{{i.fetured_image.url}}" alt="thumb" />
 									</div>
 								</div>
 							</a>
@@ -332,7 +332,7 @@
 										</span>
 										<a href="{% url 'blog_single' %}">
 											<div class="inner">
-												<img src="{{i.fetured_image}}" alt="post-title" />
+												<img src="{{i.fetured_image.url}}" alt="post-title" />
 											</div>
 										</a>
 									</div>
@@ -407,7 +407,7 @@
 										<span class="number">1</span>
 										<a href="{% url 'blog_single' %}">
 											<div class="inner">
-												<img src="{{ i.fetured_image }}" alt="post-title" />
+												<img src="{{ i.fetured_image.url }}" alt="post-title" />
 											</div>
 										</a>
 									</div>

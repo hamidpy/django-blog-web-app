@@ -14,6 +14,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 from decouple import config
 
+
 SECRET_KEY = config("SECRET_KEY") # this is to replace the secret key you cut away before
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -139,9 +140,10 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 cloudinary.config(
-  cloud_name = "dlngjubtq",
-  api_key = "718234929957781",
-  api_secret = "zPKMk54sr53OQmQxJ_O9x5FY_k4",
+  cloud_name = config('cloud_name'),
+  api_key = config('api_key'),
+  api_secret = config('api_secret'),
+  secure = True
 )
 
 # Default primary key field type
