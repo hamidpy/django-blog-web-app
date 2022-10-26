@@ -139,10 +139,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 cloudinary.config(
-  cloud_name = config('cloud_name'),
-  api_key = config('api_key'),
-  api_secret = config('api_secret'),
-  secure = True
+  cloud_name = 'dlngjubtq',
+  api_key = '718234929957781',
+  api_secret = 'zPKMk54sr53OQmQxJ_O9x5FY_k4'
 )
 
 # Default primary key field type
