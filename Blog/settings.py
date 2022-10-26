@@ -14,7 +14,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 from decouple import config
 
-SECRET_KEY='django-insecure-p8*q920vzq=$91%zfcc)=i0%xr99k7$!gw^f^v8b6n19qhuf$j'
+SECRET_KEY='your_key'
 # SECRET_KEY = config('SECRET_KEY') # this is to replace the secret key you cut away before
 
 # SECURITY WARNING: don't run with debug turned on in pro
@@ -81,12 +81,12 @@ WSGI_APPLICATION = 'Blog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd5aub4vtaqdt3u',
-        'USER': 'nxlxffqghicxrg',
-        'PASSWORD': 'efbbca1751dabddf32948cabd340b867cc8ea7d37e104b269a3b4d8c8eae393e',
-        'HOST': 'ec2-3-220-207-90.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'ENGINE': '',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
     }
 }
 
@@ -138,11 +138,7 @@ django_heroku.settings(locals())
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
-cloudinary.config(
-  cloud_name = 'dlngjubtq',
-  api_key = '718234929957781',
-  api_secret = 'zPKMk54sr53OQmQxJ_O9x5FY_k4'
-)
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
